@@ -26,7 +26,4 @@ Aplicativo Android desenvolvido em Kotlin para registro de manifestações na á
 - **FileProvider** (para gerar e compartilhar PDFs)
 - AndroidX, Material Design
 
----
-
-## 🗂️ Estrutura do Projeto
 
