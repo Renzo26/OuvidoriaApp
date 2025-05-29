@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComprovanteActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_resumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumo da Manifestação"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Assinatura: "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_signature"
+            android:padding="4dp">
+
+            <com.github.gcacace.signaturepad.views.SignaturePad
+                android:id="@+id/signature_pad"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:penColor="#000000"
+                app:backgroundColor="#EEEEEE" />
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btn_gerar_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gerar PDF" />
+    </LinearLayout>
+</ScrollView>
